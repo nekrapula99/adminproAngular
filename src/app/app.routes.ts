@@ -9,7 +9,7 @@ import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
 
 const appRoutes: Routes = [
-    {
+ /*    {
         path: '',
         component: PagesComponent,
         children: [
@@ -19,7 +19,7 @@ const appRoutes: Routes = [
             {path: '', redirectTo: '/dashboard', pathMatch: 'full'}, // Me redirecciona al dash cualquier otra
 
         ]
-    },
+    }, */
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
     {path: '**', component: NopagefoundComponent} // Para cualquier otra ruta no definida me manda al comp pageNofound
