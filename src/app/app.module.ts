@@ -11,6 +11,9 @@ import { APP_ROUTERS } from './app.routes';
 // Modulos
 import { PagesModule } from './pages/pages.module';
 
+// Tempo
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule,
     APP_ROUTERS,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
