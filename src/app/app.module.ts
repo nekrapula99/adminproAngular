@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { SettingsService } from './services/services.index';
 
 // Routes
 import { APP_ROUTERS } from './app.routes';
@@ -13,6 +14,10 @@ import { PagesModule } from './pages/pages.module';
 
 // Tempo
 import { FormsModule } from '@angular/forms';
+
+// Servicios
+import { ServiceModule } from './services/service.module';
+
 
 
 @NgModule({
@@ -25,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     APP_ROUTERS,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
